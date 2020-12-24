@@ -1,9 +1,9 @@
 object FormReversi: TFormReversi
   Left = 202
   Top = 153
-  Width = 457
-  Height = 363
   Caption = 'Reversi (C) 2007 Rich'#232'l Bilderbeek'
+  ClientHeight = 497
+  ClientWidth = 441
   Color = clBtnFace
   Constraints.MinHeight = 363
   Constraints.MinWidth = 457
@@ -32,8 +32,8 @@ object FormReversi: TFormReversi
   object ImageBoard: TImage
     Left = 0
     Top = 82
-    Width = 449
-    Height = 247
+    Width = 441
+    Height = 415
     Align = alClient
     Picture.Data = {
       07544269746D61703A000000424D3A0000000000000036000000280000000100
@@ -41,11 +41,13 @@ object FormReversi: TFormReversi
       0000FFFFFF00}
     Stretch = True
     OnMouseDown = ImageBoardMouseDown
+    ExplicitWidth = 449
+    ExplicitHeight = 247
   end
   object PanelBottom: TPanel
     Left = 0
     Top = 0
-    Width = 449
+    Width = 441
     Height = 41
     Align = alTop
     BorderWidth = 4
@@ -71,7 +73,7 @@ object FormReversi: TFormReversi
       OnClick = ImageActiveClick
     end
     object ImageBlueActive: TImage
-      Left = 414
+      Left = 406
       Top = 5
       Width = 30
       Height = 31
@@ -83,12 +85,13 @@ object FormReversi: TFormReversi
       Stretch = True
       Visible = False
       OnClick = ImageActiveClick
+      ExplicitLeft = 414
     end
   end
   object PanelMenu: TPanel
     Left = 0
     Top = 41
-    Width = 449
+    Width = 441
     Height = 41
     Align = alTop
     BorderWidth = 4
@@ -122,7 +125,7 @@ object FormReversi: TFormReversi
       Stretch = True
     end
     object ImageBlue: TImage
-      Left = 414
+      Left = 406
       Top = 5
       Width = 30
       Height = 31
@@ -132,9 +135,10 @@ object FormReversi: TFormReversi
         0000010000000100180000000000040000000000000000000000000000000000
         0000FFFFFF00}
       Stretch = True
+      ExplicitLeft = 414
     end
     object LabelBlue: TLabel
-      Left = 350
+      Left = 342
       Top = 5
       Width = 64
       Height = 31
@@ -142,6 +146,7 @@ object FormReversi: TFormReversi
       Alignment = taCenter
       AutoSize = False
       Caption = ' 2 '
+      ExplicitLeft = 350
     end
     object LabelRestart: TLabel
       Left = 99
@@ -154,7 +159,7 @@ object FormReversi: TFormReversi
       OnClick = LabelRestartClick
     end
     object LabelAbout: TLabel
-      Left = 238
+      Left = 230
       Top = 5
       Width = 112
       Height = 31
@@ -162,6 +167,7 @@ object FormReversi: TFormReversi
       Alignment = taCenter
       Caption = ' About '
       OnClick = LabelAboutClick
+      ExplicitLeft = 238
     end
   end
 end
