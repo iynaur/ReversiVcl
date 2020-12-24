@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+__history/
+Project2.res
+ProjectReversi.cbproj.local
+Win32/
